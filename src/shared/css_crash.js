@@ -41,6 +41,52 @@ const CSS_CRASH=`
 .crash-cashout-btn:hover{transform:translateY(-2px) scale(1.015);filter:brightness(1.08);}
 .crash-cashout-btn:active{transform:scale(.97);animation:none;}
 .crash-cashout-btn:disabled{opacity:.28;cursor:not-allowed;transform:none;animation:none;}
+
+/* ═══════════════════════ RESPONSIVE ═══════════════════════ */
+
+/* ── Tablet (≤ 640 px) ── */
+@media(max-width:640px){
+  .crash-wrap{border-radius:14px;}
+
+  /* Overlay multiplier */
+  .crash-mult-big{font-size:3.4rem;}
+  .crash-countdown-big{font-size:3.6rem;}
+  .crash-status-tag{font-size:.6rem;padding:3px 10px;}
+  .crash-overlay{padding-top:14px;gap:5px;}
+
+  /* History */
+  .crash-history{gap:4px;}
+  .ch-badge{font-size:.62rem;padding:3px 8px;}
+
+  /* Cashout button */
+  .crash-cashout-btn{padding:13px;font-size:.9rem;}
+}
+
+/* ── Standard phone (≤ 480 px) ── */
+@media(max-width:480px){
+  .crash-wrap{border-radius:11px;}
+
+  /* Overlay */
+  .crash-mult-big{font-size:2.6rem;}
+  .crash-countdown-big{font-size:2.8rem;}
+  .crash-status-tag{font-size:.55rem;padding:3px 8px;gap:4px;}
+  .crash-overlay{padding-top:10px;gap:4px;}
+
+  /* History badges — wrap tightly */
+  .crash-history{gap:3px;flex-wrap:wrap;}
+  .ch-badge{font-size:.56rem;padding:2px 6px;border-radius:14px;}
+
+  /* Cashout */
+  .crash-cashout-btn{padding:11px;font-size:.82rem;border-radius:10px;gap:6px;}
+}
+
+/* ── Very small phone (≤ 360 px) ── */
+@media(max-width:360px){
+  .crash-mult-big{font-size:2.1rem;}
+  .crash-countdown-big{font-size:2.3rem;}
+  .crash-cashout-btn{padding:9px;font-size:.74rem;}
+}
+
 `;
 
 export { CSS_CRASH };

@@ -68,6 +68,82 @@ const CSS_BLACKJACK=`
 /* Insurance bar */
 .bj-insurance{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(245,196,0,.06);border:1px solid rgba(245,196,0,.22);border-radius:10px;animation:bjPop .3s ease;}
 
+/* ═══════════════════════ RESPONSIVE ═══════════════════════ */
+
+/* ── Tablet (≤ 640 px) ── */
+@media(max-width:640px){
+  .bj-table{padding:14px 12px 12px;border-radius:14px;}
+
+  /* Cards smaller */
+  .bj-card{width:58px;height:84px;border-radius:7px;}
+  .bj-card-face{border-radius:7px;}
+  .bj-card-back{border-radius:7px;}
+  .bj-crk{font-size:.76rem;}
+  .bj-csm{font-size:.52rem;}
+  .bj-corner.tl{top:4px;left:5px;}
+  .bj-corner.br{bottom:4px;right:5px;}
+
+  /* Hand area */
+  .bj-cards{gap:6px;min-height:88px;}
+  .bj-hand-area{gap:10px;}
+  .bj-hand-label{margin-bottom:5px;}
+
+  /* Score badge */
+  .bj-score-badge{font-size:.75rem;padding:3px 9px;}
+
+  /* Chips */
+  .bj-chip{width:40px;height:40px;font-size:.65rem;border-width:2.5px;}
+
+  /* Result overlay */
+  .bj-result-title{font-size:1.5rem;}
+  .bj-result-sub{font-size:.72rem;}
+
+  /* Insurance */
+  .bj-insurance{padding:8px 11px;}
+}
+
+/* ── Standard phone (≤ 480 px) ── */
+@media(max-width:480px){
+  .bj-table{padding:10px 9px 10px;border-radius:11px;}
+
+  /* Cards */
+  .bj-card{width:48px;height:70px;border-radius:6px;}
+  .bj-card-face{border-radius:6px;}
+  .bj-card-back{border-radius:6px;}
+  .bj-crk{font-size:.66rem;}
+  .bj-csm{font-size:.46rem;}
+  .bj-corner.tl{top:3px;left:4px;}
+  .bj-corner.br{bottom:3px;right:4px;}
+
+  /* Hand */
+  .bj-cards{gap:5px;min-height:74px;}
+  .bj-hl-name{font-size:.55rem;}
+  .bj-score-badge{font-size:.68rem;padding:3px 8px;border-radius:8px;}
+
+  /* Chips */
+  .bj-chip{width:36px;height:36px;font-size:.58rem;border-width:2px;}
+  .bj-chips{gap:6px;}
+
+  /* Result */
+  .bj-result-title{font-size:1.25rem;}
+  .bj-result-sub{font-size:.65rem;}
+
+  /* Divider spacing */
+  .bj-divider{margin:8px 0 !important;}
+
+  /* Insurance */
+  .bj-insurance{padding:7px 10px;border-radius:8px;flex-wrap:wrap;gap:6px;}
+}
+
+/* ── Very small phone (≤ 360 px) ── */
+@media(max-width:360px){
+  .bj-card{width:42px;height:62px;}
+  .bj-crk{font-size:.58rem;}
+  .bj-chip{width:32px;height:32px;font-size:.52rem;}
+  .bj-result-title{font-size:1.1rem;}
+  .bj-cards{gap:4px;min-height:66px;}
+}
+
 `;
 
 export { CSS_BLACKJACK };

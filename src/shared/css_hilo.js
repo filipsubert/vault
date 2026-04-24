@@ -109,6 +109,101 @@ const CSS_HILO=`
 .hlbtn.lo .hb-mult{color:#ef4444;text-shadow:0 0 16px rgba(239,68,68,.35);}
 .hb-prob{font-size:.64rem;opacity:.6;font-weight:500;}
 
+/* ═══════════════════════ RESPONSIVE ═══════════════════════ */
+
+/* ── Tablet / large phone (≤ 640 px) ── */
+@media(max-width:640px){
+  .card-table{padding:16px 14px 14px;border-radius:14px;}
+
+  /* History strip — smaller cards */
+  .card-strip{gap:4px;min-height:48px;margin-bottom:14px;}
+  .strip-card{width:34px;height:50px;font-size:.8rem;border-radius:6px;}
+  .sc-s{font-size:.52rem;}
+
+  /* Card stage — tighter gap */
+  .card-slot{width:92px;height:136px;}
+  .deck-pile{width:92px;height:136px;}
+  .deck-layer{width:92px;height:136px;}
+
+  /* Probability bar */
+  .prob-wrap{padding:7px 10px;gap:5px;}
+  .prob-lbl{font-size:.6rem;}
+  .prob-track{height:6px;}
+
+  /* Rank ladder */
+  .rank-ladder{padding:8px 10px 6px;gap:2px;}
+  .rl-label{font-size:.5rem;}
+
+  /* HI / LO buttons */
+  .hlbtns{gap:8px;}
+  .hlbtn{padding:13px 8px 11px;border-radius:11px;gap:4px;}
+  .hb-tag{font-size:.64rem;}
+  .hb-mult{font-size:1.35rem;}
+  .hb-prob{font-size:.58rem;}
+
+  /* VS divider */
+  .vs-line{height:24px;}
+  .vs-div{gap:4px;font-size:.62rem;}
+
+  /* Result badge */
+  .rbadge{font-size:.62rem;padding:3px 10px;}
+}
+
+/* ── Small phone (≤ 480 px) ── */
+@media(max-width:480px){
+  .card-table{padding:12px 10px 12px;border-radius:12px;}
+
+  /* History strip */
+  .card-strip{gap:3px;min-height:42px;margin-bottom:12px;flex-wrap:nowrap;overflow:hidden;}
+  .strip-card{width:28px;height:42px;font-size:.7rem;border-radius:5px;}
+  .sc-s{font-size:.46rem;}
+
+  /* Cards */
+  .card-slot{width:78px;height:114px;}
+  .deck-pile{width:78px;height:114px;}
+  .deck-layer{width:78px;height:114px;}
+
+  /* Card face corners */
+  .cf-rk{font-size:.88rem;}
+  .cf-sm{font-size:.62rem;}
+
+  /* Probability */
+  .prob-wrap{padding:6px 8px;gap:4px;border-radius:8px;}
+  .prob-lbl{font-size:.56rem;min-width:28px !important;}
+  .prob-track{height:5px;}
+
+  /* Rank ladder */
+  .rank-ladder{padding:7px 8px 5px;gap:2px;border-radius:8px;}
+  .rl-label{font-size:.44rem;}
+
+  /* HI / LO buttons */
+  .hlbtns{gap:6px;}
+  .hlbtn{padding:11px 6px 9px;border-radius:10px;gap:3px;}
+  .hb-ico{gap:4px;margin-bottom:1px;}
+  .hb-tag{font-size:.58rem;letter-spacing:.04em;}
+  .hb-mult{font-size:1.2rem;}
+  .hb-prob{font-size:.52rem;}
+
+  /* VS */
+  .vs-line{height:18px;}
+  .vs-div{font-size:.56rem;gap:3px;}
+
+  /* Badge */
+  .rbadge{font-size:.56rem;padding:3px 8px;top:-10px;}
+}
+
+/* ── Very small phone (≤ 360 px) ── */
+@media(max-width:360px){
+  .card-slot{width:68px;height:100px;}
+  .deck-pile{width:68px;height:100px;}
+  .deck-layer{width:68px;height:100px;}
+  .cf-rk{font-size:.78rem;}
+  .hb-mult{font-size:1.05rem;}
+  .hb-tag{font-size:.52rem;}
+  .strip-card{width:24px;height:36px;font-size:.62rem;}
+}
+
 `;
+
 
 export { CSS_HILO };
